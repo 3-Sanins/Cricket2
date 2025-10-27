@@ -1,14 +1,13 @@
 // Firebase config (same as before, agar alag file hai toh yahan add karo)
 const firebaseConfig = {
-  apiKey: "AIzaSyDBhHt1wbY-gwlmUYkLSWblqgs8sptCWps",
-  authDomain: "cricket-f3711.firebaseapp.com",
-  databaseURL: "https://cricket-f3711-default-rtdb.firebaseio.com",
-  projectId: "cricket-f3711",
-  storageBucket: "cricket-f3711.firebasestorage.app",
-  messagingSenderId: "84308127741",
-  appId: "1:84308127741:web:9d7cc9843558d4d053b394"
-};
-
+    apiKey: "AIzaSyClRQbU3N7F2F9Pp6BYirjcQxZEyVuxcXo",
+    authDomain: "cric-283bd.firebaseapp.com",
+    databaseURL: "https://cric-283bd-default-rtdb.firebaseio.com",
+    projectId: "cric-283bd",
+    storageBucket: "cric-283bd.firebasestorage.app",
+    messagingSenderId: "509305000521",
+    appId: "1:509305000521:web:2c16c4f7d2e85f98476598"
+  };
 // Firebase initialize karo (agar pehle initialize nahi hai)
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
