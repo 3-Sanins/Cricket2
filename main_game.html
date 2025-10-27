@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Fantasy Game</title>
+    <link rel="stylesheet" href="main_game.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1 id="gameTitle">Cricket Match</h1>
+        <div id="scorecard" class="card"></div>
+        <div id="battingUI" class="card" style="display: none;">
+            <h3>Batting</h3>
+            <button id="defenceBtn" class="moodBtn">Defence</button>
+            <button id="strikeBtn" class="moodBtn">Strike</button>
+            <button id="strokeBtn" class="moodBtn">Stroke</button>
+        </div>
+        <div id="bowlingUI" class="card" style="display: none;">
+            <h3>Bowling</h3>
+            <div id="currentOver"></div>
+        </div>
+        <div id="popup" class="popup" style="display: none;">
+            <div class="popupContent">
+                <span id="popupClose" class="close">&times;</span>
+                <div id="popupBody"></div>
+            </div>
+        </div>
+        <div id="endGameUI" class="card" style="display: none;">
+            <h2 id="winnerText"></h2>
+            <div id="scoreboard"></div>
+            <button id="okBtn">OK</button>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    <script src="main_game.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Data</title>
+    <link rel="stylesheet" href="players_data.css">
+</head>
+<body>
+  
+  <p id="selectedCount">Selected Players: 0/11</p> <!-- Ye add karo -->
+
+    <h1>Your Team Players</h1>
+    <table id="playersTable">
+        <thead>
+            <tr>
+                <th>Player Name</th>
+                <th>Type</th>
+                <th>Batting Skills</th>
+                <th>Points</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="playersTableBody">
+            <!-- Players yahan dynamically add honge -->
+        </tbody>
+    </table>
+
+    <!-- Modal for full player data -->
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalPlayerName"></h2>
+            <p><strong>Type:</strong> <span id="modalType"></span></p>
+            <p><strong>Batting Skills:</strong> <span id="modalBattingSkills"></span></p>
+            <p><strong>Batting Rating:</strong> <span id="modalBattingRating"></span></p>
+            <p><strong>Bowling Rating:</strong> <span id="modalBowlingRating"></span></p>
+            <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+            <p><strong>Matches:</strong> <span id="modalMatches"></span></p>
+            <p><strong>Runs:</strong> <span id="modalRuns"></span></p>
+            <p><strong>Wickets:</strong> <span id="modalWickets"></span></p>
+            <p><strong>Fifties:</strong> <span id="modalFifties"></span></p>
+            <p><strong>Hundreds:</strong> <span id="modalHundreds"></span></p>
+            <p><strong>5 Wicket Hauls:</strong> <span id="modal5WicketHauls"></span></p>
+            <p><strong>Avg:</strong> <span id="modalAvg"></span></p>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+  
+    <script src="players_data.js"></script>
+</body>
+</html>
